@@ -9,6 +9,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get("/", (req, res) => {
+  res.send("BlogVerse Backend Running Successfully 🚀");
+});
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/posts", require("./routes/posts"));
 app.use("/api/feed", require("./routes/feed"));
