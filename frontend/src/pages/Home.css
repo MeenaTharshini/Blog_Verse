@@ -1,0 +1,201 @@
+/* =========================
+   PAGE BASE
+========================= */
+.home {
+  min-height: 100vh;
+  padding: 60px 20px;
+
+  background: var(--bg);
+  color: var(--text);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  max-width: 800px;
+  text-align: center;
+
+  animation: fadeUp 0.6s ease;
+}
+
+/* badge */
+.hero-badge {
+  display: inline-block;
+
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  background: rgba(212, 175, 55, 0.15);
+  color: var(--primary);
+
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  margin-bottom: 20px;
+}
+
+/* title */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+
+  line-height: 1.2;
+
+  margin: 0;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+/* subtitle */
+.hero p {
+  margin-top: 15px;
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  color: var(--muted);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.hero-buttons {
+  margin-top: 25px;
+
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 14px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+/* primary (gold) */
+.btn.primary {
+  background: linear-gradient(135deg, #d4af37, #f5e6b3);
+  color: #111;
+
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
+}
+
+.btn.primary:hover {
+  transform: translateY(-3px);
+}
+
+/* secondary */
+.btn.secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+
+  background: transparent;
+}
+
+.btn.secondary:hover {
+  background: rgba(212, 175, 55, 0.1);
+  transform: translateY(-3px);
+}
+
+/* =========================
+   FEATURES SECTION
+========================= */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  max-width: 1000px;
+  width: 100%;
+}
+
+.feature-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+  padding: 20px;
+
+  text-align: center;
+
+  box-shadow: var(--shadow);
+
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin: 0 0 10px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+/* =========================
+   TYPING CURSOR EFFECT
+========================= */
+.cursor {
+  display: inline-block;
+  margin-left: 4px;
+
+  color: var(--primary);
+  font-weight: 700;
+
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

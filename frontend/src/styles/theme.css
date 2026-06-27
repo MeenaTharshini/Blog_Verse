@@ -1,0 +1,39 @@
+/* =========================
+   LIGHT MODE (Luxury Cream Gold)
+========================= */
+:root {
+  --bg: #f7f3e8;
+  --text: #1a1a1a;
+
+  --primary: #b8860b;
+  --primary-glow: rgba(184, 134, 11, 0.25);
+
+  --card-bg: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   DARK MODE (Dhanvantri Style SaaS UI)
+========================= */
+[data-theme="dark"] {
+  --bg: #0b0b0b;
+  --text: #f5f5f5;
+
+  --primary: #d4af37;
+  --primary-glow: rgba(212, 175, 55, 0.25);
+
+  --card-bg: #111111;
+  --border: rgba(212, 175, 55, 0.15);
+
+  --shadow: rgba(212, 175, 55, 0.08);
+}
+
+/* GLOBAL */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+  font-family: "Segoe UI", sans-serif;
+}

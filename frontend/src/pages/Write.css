@@ -1,0 +1,323 @@
+.write-page {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.write-hero {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 90px 20px 50px;
+
+  text-align: center;
+
+  position: relative;
+}
+
+.write-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 550px;
+  height: 550px;
+
+  top: -250px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: radial-gradient(
+    circle,
+    var(--primary-glow),
+    transparent 70%
+  );
+
+  pointer-events: none;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  font-size: 13px;
+  font-weight: 600;
+
+  margin-bottom: 24px;
+
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.write-hero h1 {
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+
+  margin-bottom: 20px;
+}
+
+.write-hero p {
+  max-width: 700px;
+
+  margin: auto;
+
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  opacity: 0.8;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.write-container {
+  max-width: 900px;
+
+  margin: auto;
+
+  padding: 0 20px 80px;
+}
+
+/* =========================
+   EDITOR CARD
+========================= */
+
+.write-card {
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  box-shadow: 0 20px 50px var(--shadow);
+
+  transition: all 0.3s ease;
+}
+
+.write-card:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.title-input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: var(--text);
+
+  font-size: clamp(2rem, 5vw, 3.5rem);
+
+  font-weight: 800;
+
+  line-height: 1.2;
+
+  margin-bottom: 30px;
+}
+
+.title-input::placeholder {
+  color: rgba(150, 150, 150, 0.7);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content-input {
+  width: 100%;
+
+  min-height: 500px;
+
+  border: none;
+  outline: none;
+
+  resize: vertical;
+
+  background: transparent;
+
+  color: var(--text);
+
+  font-size: 18px;
+
+  line-height: 2;
+
+  font-family: inherit;
+}
+
+.content-input::placeholder {
+  color: rgba(150, 150, 150, 0.7);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.editor-footer {
+  margin-top: 30px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-text {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.publish-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 14px 24px;
+
+  border: none;
+
+  border-radius: 16px;
+
+  background: var(--primary);
+
+  color: #111;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.publish-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 30px var(--primary-glow);
+}
+
+.publish-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+  .write-hero {
+    padding-top: 70px;
+  }
+
+  .write-hero h1 {
+    font-size: 3rem;
+  }
+
+  .write-card {
+    padding: 24px;
+  }
+
+  .content-input {
+    min-height: 400px;
+  }
+
+  .editor-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .publish-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .write-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .write-hero p {
+    font-size: 15px;
+  }
+
+  .title-input {
+    font-size: 2rem;
+  }
+
+  .content-input {
+    min-height: 320px;
+    font-size: 16px;
+  }
+
+  .write-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}

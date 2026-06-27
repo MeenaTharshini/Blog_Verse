@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1782548556139",
+    "title": "Demo Title",
+    "content": "Hello! This is a demo Passage..Happy to see you all.",
+    "userId": "1782548505596",
+    "author": "Minu",
+    "likes": 1,
+    "likedUsers": [
+      "1782548505596"
+    ],
+    "createdAt": "2026-06-27T08:22:36.139Z"
+  }
+]
