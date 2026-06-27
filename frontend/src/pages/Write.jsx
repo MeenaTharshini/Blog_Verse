@@ -33,7 +33,7 @@ function Write() {
       }
 
       const response = await axios.post(
-        "https://blog-verse-api.onrender.com/api/posts",
+        "https://blog-verse-web-p8w9.onrender.com/api/posts",
         {
           title,
           content,

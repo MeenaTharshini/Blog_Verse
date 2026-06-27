@@ -1,4 +1,4 @@
-const BASE_URL = "https://blog-verse-api.onrender.com/api";
+const BASE_URL = "https://blog-verse-web-p8w9.onrender.com/api";
 
 
 // ================= TOKEN =================
