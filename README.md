@@ -167,7 +167,6 @@ View Engagement
 
 ## 📂 Core Modules
 
-```text
 BlogVerse
 │
 ├── Authentication
@@ -185,7 +184,7 @@ BlogVerse
 ├── Content Management
 │
 └── Responsive Interface
-```
+
 
 ---
 
@@ -213,13 +212,13 @@ The BlogVerse dashboard provides users with an overview of their blogging activi
 
 Example metrics:
 
-```text
+
 ┌──────────────────────────────────┐
 │          BLOGVERSE DASHBOARD     │
 ├──────────────────────────────────┤
 │                                  │
-│  Posts        Likes      Comments │
-│   12           248          73    │
+│  Posts        Likes     Comments │
+│   12           248         73    │
 │                                  │
 │  Recent Posts                    │
 │  ──────────────────────────────  │
@@ -228,7 +227,7 @@ Example metrics:
 │  • Learning React                │
 │                                  │
 └──────────────────────────────────┘
-```
+
 
 ---
 
@@ -293,7 +292,7 @@ npm run dev
 
 A typical structure:
 
-```text
+
 BlogVerse/
 │
 ├── client/
@@ -314,7 +313,6 @@ BlogVerse/
 │
 ├── package.json
 └── README.md
-```
 
 ---
 
